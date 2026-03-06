@@ -8,26 +8,25 @@
     <title>Email Sending</title>
 </head>
 <body>
-    <div class="Main">
-        <button class="Button" id="ToMainPage" onclick="ToMainPage()">To main page</button>
+    <button class="Button" id="ToMainPage" onclick="ToMainPage()">To main page</button>
+    <br>
+    <br>
+    <abbr>--</abbr>
+    <br>
+    <br>
+    <form action="https://formsubmit.co/firsty.ph@gmail.com" method="post">
+        <label>Enter your email: <input type="email" placeholder="Email (Required)" name="Email" required></label>
         <br>
         <br>
-        <abbr>--</abbr>
+        <label>Enter your message:</label>
         <br>
         <br>
-        <form action="https://formsubmit.co/firsty.ph@gmail.com" method="post">
-            <label>Enter your email: <input type="email" placeholder="Email (Required)" name="Email" required></label>
-            <br>
-            <br>
-            <label>Enter your message:</label>
-            <br>
-            <br>
-            <textarea name="Message" placeholder="Message (Required)" required></textarea>
-            <br>
-            <br>
-            <input type="submit" value="Send an Email" id="EmailButtonSend" class="Button" onclick="Sended('EmailButtonSend')">
-        </form>
-    </div>
+        <textarea name="Message" placeholder="Message (Required)" required></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Send an Email" id="EmailButtonSend" class="Button" onclick="Sended('EmailButtonSend')">
+    </form>
+    
     <script src="scripts/mainscript.js"></script>
     <script src="scripts/email-send.js"></script>
 </body>
