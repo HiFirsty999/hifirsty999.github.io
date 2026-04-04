@@ -10,8 +10,11 @@ body {
 }
 
 #FullDetails {
+    border: 0.3vh, solid, rgb(255, 255, 255);
+    border-radius: 1vh;
     display: flex;
     padding-top: 2vh;
+    height: 4vh;
     gap: 5vh;
     justify-items: center;
     justify-content: center;
@@ -20,7 +23,6 @@ body {
 a {
     font-family: monospace;
     border: none;
-    background-color: transparent;
     color: rgb(255, 255, 255);
     text-decoration: none;
     cursor: pointer;
@@ -41,6 +43,33 @@ a:hover {
 }
 
 a:active {
+    color: rgb(0, 100, 255);
+    text-decoration: line-through;
+    transform: scaleX(1) scaleY(1);
+    text-shadow: none;
+}
+
+textarea {
+    height: 30vh;
+    width: 25vh;
+}
+
+summary {
+    cursor: pointer;
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+summary:hover {
+    color: rgb(0, 255, 100);
+    text-decoration: underline;
+    transform: scaleX(1.05) scaleY(1.05);
+    text-shadow: 0.5vh 0.25vh 0.25vh rgb(0, 150, 50);
+}
+
+summary:active {
     color: rgb(0, 100, 255);
     text-decoration: line-through;
     transform: scaleX(1) scaleY(1);
@@ -68,8 +97,8 @@ a:active {
 .Button:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    transform: scaleX(1.05) scaleY(1.05);
-    box-shadow: 0.25vh 0.25vh 0.25vh rgb(150, 150, 150);
+    transform: scaleX(1.05) scaleY(1.05); 
+    box-shadow: 0 0 5vh rgb(150, 150, 150);
 }
 
 .Button:active {
@@ -91,15 +120,6 @@ a:active {
     border-radius: 3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067982148086513282306647093844609550582231725359408128481117450284102701938521105559644622948954930381964428810975665933446128475648233786783165271201909145648566923460348610454326648213393607260249141273724587006vh;
     height: 6vh;
     width: 6vh;
-}
-
-textarea {
-    height: 30vh;
-    width: 25vh;
-}
-
-summary {
-    cursor: pointer;
 }
 
 @keyframes siteEnter {
